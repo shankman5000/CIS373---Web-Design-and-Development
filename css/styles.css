@@ -78,6 +78,18 @@ textarea.form-control { min-height:105px; resize:vertical; }
 .save-button:focus-visible { outline:3px solid var(--orange); outline-offset:3px; }
 .field-error { display:block; color:var(--charcoal); font-weight:700; margin:.25rem 0 0; }
 .field-error:not(:empty)::before { content:"⚠ "; }
+/* Touchstone 4: Keep validation feedback beside its field */
+.field-error {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.field-error:empty {
+  display: none;
+}
 .form-control[aria-invalid="true"] { border:3px solid var(--charcoal); }
 #form-result { font-weight:700; }
 @media(min-width:720px) { .opportunity-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
