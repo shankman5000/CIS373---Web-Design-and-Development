@@ -1,0 +1,1 @@
+Touchstone 4 updates. Copy services.html and contact.html to repository root; css/styles.css to css/; both JavaScript files to js/. Keep your existing index.html, about.html, images, and media. The educational form does not transmit inquiries. Test in browser and capture required screenshots.

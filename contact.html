@@ -29,7 +29,7 @@
 </section>
 <section aria-labelledby="form-heading" class="content-section">
 <h2 id="form-heading">Interest Form</h2>
-<form action="#" class="interest-form" method="post">
+<form action="#" class="interest-form" id="interest-form" method="post" novalidate>
 <fieldset>
 <legend>Your Contact Information</legend>
 <p><label class="form-label" for="full-name">Full name (required)</label>
@@ -45,7 +45,7 @@
 <option value="volunteer">Volunteering</option>
 <option value="foster">Fostering</option>
 <option value="adoption">Adoption information</option>
-</select></p>
+</select><span class="field-error" id="interest-error" aria-live="polite"></span><span class="field-error" id="email-error" aria-live="polite"></span><span class="field-error" id="full-name-error" aria-live="polite"></span></p>
 <p><label class="form-label" for="availability">Availability (required)</label>
 <select class="form-control" id="availability" name="availability" required="">
 <option value="">Select your availability</option>
@@ -53,20 +53,22 @@
 <option value="evenings">Evenings</option>
 <option value="weekends">Weekends</option>
 <option value="flexible">Flexible</option>
-</select></p>
+</select><span class="field-error" id="availability-error" aria-live="polite"></span></p>
 <p><label class="form-label" for="experience">Experience with pets</label>
 <textarea class="form-control" cols="45" id="experience" name="pet_experience" placeholder="Tell us about any pet care experience" rows="3"></textarea></p>
 <p><label class="form-label" for="message">Your message (required)</label>
-<textarea class="form-control" cols="45" id="message" minlength="10" name="message" required="" rows="5"></textarea></p>
+<textarea class="form-control" cols="45" id="message" minlength="10" name="message" required="" rows="5"></textarea><span class="field-error" id="message-error" aria-live="polite"></span></p>
 </fieldset>
 <button class="submit-button" type="submit">Send Interest Inquiry</button>
+<p id="form-result" role="status" aria-live="polite"></p>
 </form>
-<p class="coursework-note"><strong>Coursework note:</strong> This sample form demonstrates HTML validation but is not connected to a submission service.</p>
+<p class="coursework-note"><strong>Coursework note:</strong> This sample form demonstrates JavaScript validation but is not connected to a submission service. No inquiry is transmitted.</p>
 </section>
 </main>
 <footer class="site-footer">
 <p>© 2026 Twin Cities Animal Rescue. Educational sample website.</p>
 <p><a href="contact.html">Contact our rescue team</a></p>
 </footer>
+<script src="js/contact-validation.js" defer></script>
 </body>
 </html>
