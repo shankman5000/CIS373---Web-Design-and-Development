@@ -33,9 +33,9 @@
 <fieldset>
 <legend>Your Contact Information</legend>
 <p><label class="form-label" for="full-name">Full name (required)</label>
-<input autocomplete="name" class="form-control" id="full-name" minlength="2" name="full_name" required="" type="text"/></p>
+<input autocomplete="name" class="form-control" id="full-name" minlength="2" name="full_name" required="" type="text"/><span class="field-error" id="full-name-error" aria-live="polite"></span></p>
 <p><label class="form-label" for="email">Email address (required)</label>
-<input autocomplete="email" class="form-control" id="email" name="email" required="" type="email"/></p>
+<input autocomplete="email" class="form-control" id="email" name="email" required="" type="email"/><span class="field-error" id="email-error" aria-live="polite"></span></p>
 </fieldset>
 <fieldset>
 <legend>How You Would Like to Help</legend>
@@ -45,7 +45,7 @@
 <option value="volunteer">Volunteering</option>
 <option value="foster">Fostering</option>
 <option value="adoption">Adoption information</option>
-</select><span class="field-error" id="interest-error" aria-live="polite"></span><span class="field-error" id="email-error" aria-live="polite"></span><span class="field-error" id="full-name-error" aria-live="polite"></span></p>
+</select><span class="field-error" id="interest-error" aria-live="polite"></span></p>
 <p><label class="form-label" for="availability">Availability (required)</label>
 <select class="form-control" id="availability" name="availability" required="">
 <option value="">Select your availability</option>
